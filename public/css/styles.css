@@ -16,10 +16,21 @@ img{
 }
 
 .imagen-fondo{
-background-position: right top;
+    position: right top;
 }
+.buscador{
+    display: flex;
+    height: 20px;
+}
+.fa-search{
+    background-color: white;
+    font-size: 15px;
+}
+
 header ul li{
     display: none;
+   
+
 }
 .burguer-menu{
     background-color: #1259c3;
@@ -58,11 +69,14 @@ width: 90%;
 margin: 0 auto;
 }
 main section{
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.main-article{
+
+main section article{
     margin: 10px 0;
-    width: 100%;
+    width: 98%;
+    
 }
 .main-article-div{
     border-top: 1px solid #ebebeb;
@@ -92,17 +106,17 @@ main section article i{
     }
 
 .precio{
-    font-size: 18px;
+    font-size: 15px;
     width: 30%;
     }
 
 .descuento{
-    font-size: 16px;
+    font-size: 14px;
     width: 70%;
     }
     
 .descripcion{
-    font-size: 16px;
+    font-size: 14px;
     display: none;
     }
 
@@ -118,7 +132,14 @@ text-align: center;
 
 /*media*/
 
-@media (min-width: 361px){
+@media (min-width: 375px){
+    /*header*/
+.header-navbar a{
+    text-decoration: none;
+    color: rgb(32, 24, 105);
+}
+/*main*/
+
 .descripcion{
     display: block;
 }
@@ -126,12 +147,50 @@ main section{
     display: flex;
     flex-wrap: wrap;
 }
-.main-article{
+main section article{
     width: 48%;
 }
+
+
+}
+
+@media (min-width: 481px){
+    /*header*/
+    .inicio{
+        display: flex;
+        justify-content: space-between;
+    }
+    .text-cuotas{
+        font-size: 11px;
+        max-width: 350px;
+        text-align: center;
+    }
+    .header-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-navbar ul{
+        display: flex;
+    }
+    header ul li{
+        display: flex;
+        font-size: 12px;
+        margin: 0 3px;
+}
+
 }
 
 @media(min-width: 769px){
+    /*header*/
+header ul li{
+    display: flex;
+    font-size: 17px;
+}
+.burguer-menu{
+    display: none;
+}
+
+/*main*/
 main section article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 
@@ -140,15 +199,13 @@ main section{
     display: flex;
     flex-wrap: wrap;
 }
-.main-article{
+main section article{
     width: 24%;
+    
 
 }
 header ul li{
     display: block;
-}
-.burguer-menu{
-    display: none;
 }
 
 }
