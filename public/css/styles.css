@@ -18,9 +18,22 @@ img{
 .imagen-fondo{
     position: right top;
 }
-.buscador{
+.inicio{
+    margin: 15px 0;
     display: flex;
-    height: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header div img{
+    width: 40%;
+}
+div .buscador{
+    display: flex;
+    height: 25px;
+    margin: auto;
+}
+.text-cuotas{
+    margin: auto;
 }
 .fa-search{
     background-color: white;
@@ -134,6 +147,9 @@ text-align: center;
 
 @media (min-width: 375px){
     /*header*/
+.header-navbar{
+    margin: 25px 0;
+}
 .header-navbar a{
     text-decoration: none;
     color: rgb(32, 24, 105);
@@ -160,10 +176,17 @@ main section article{
         display: flex;
         justify-content: space-between;
     }
+    header div img{
+        width:30%
+    }
+    .buscador{
+        width: 30%;
+    }
     .text-cuotas{
-        font-size: 11px;
-        max-width: 350px;
         text-align: center;
+        width: 30%;
+        font-size: 15px;
+        margin: auto;
     }
     .header-navbar{
         display: flex;
@@ -208,4 +231,15 @@ header ul li{
     display: block;
 }
 
+}
+@media (min-width: 1200px){
+   /*header*/
+body{
+ max-width: 1200px;   
+ margin: auto;
+}    
+.buscador{
+    min-width: none;
+
+}
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "https: //fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,400; 1,100 & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mercado Liebre</title>
+</head>
+
+<body>
+    <header class="imagen-fondo">
+    <div class="inicio">
+        <img src="/Images/logo-mercado-liebre.svg" alt="Logo de la Empresa">
+        <div class="buscador">
+        <input type="text" placeholder="Buscar productos, marcas"><i class="fas fa-search"></i>
+        </div>
+        <p class="text-cuotas"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</p>
+    </div>
+    <nav class="header-navbar">
+    <ul>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>              
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="/register">Crea tu Cuenta</a><i class="far fa-address-card"></i></li>
+        <li><a href="/login">Ingresá</a><i class="fas fa-sign-out-alt"></i></li>
+        <li><a href="#">Tus Compras</a><i class="fas fa-shopping-basket"></i></li>
+    </ul>      
+    </nav>
+
+    <div class= "burguer-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+</header>
+<main>
+ <form action="registro" method="post">
+    
+    <label for="nombre">Nombre y Apellido</label>
+    <input type="text" name="nombre" id="nombre" required minlength="6">
+    <br>
+    <label for="usuario">Nombre de Usuario</label>
+    <input type="text" name="usuario" id="usuario">
+    <br>
+    <label for="fecha">Fecha de Nacimiento</label>
+    <input type="date" name="fecha" id="fecha" value="1999-07-22">
+    <br>
+    <label for="domicilio">Domicilio</label>
+    <input type="text" name="domicilio" id="domicilio">
+    <br>
+    <label for="perfil">¿Desea Comprar o Vender?</label>
+    <input type="radio" name="perfil" value="Comprar">
+    <input type="radio" name="perfil" value="Vender">
+    <br>
+    <label for="categorias">Categorías de Interes:</label>
+    <br>
+    <label for="categorias">Electro</label>
+    <input type="checkbox" name="categorias" value="Electro">
+    <br>
+    <label for="categorias">Moda</label>
+    <input type="checkbox" name="categorias" value="Moda">
+    <br>
+    <label for="categorias">Jugeterías</label>
+    <input type="checkbox" name="categorias" value="Jugueterías">
+    <br>
+    <label for="categorias">Hogar</label>
+    <input type="checkbox" name="categorias" value="Hogar">
+    <br>
+    <label for="categorias">Vida Sana</label>
+    <input type="checkbox" name="categorias" value="Vida Sana">
+    <br>
+    <label for="image">Foto de Perfil</label>
+    <input type="file" name="image">
+    <br>
+    <label for="contraseña">Contraseña</label>
+    <input type="password" name="contraseña" id="contraseña">
+    <br>
+    <label for="confirma">Confirma Contraseña</label>
+    <input type="password" name="confirma" id="confirma">
+    <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </p>
+ </form>
+
+
+</main>
