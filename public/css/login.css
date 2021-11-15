@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/*header*/
+header{
+    background-color: #EAC926;
+    width: 100%
+}
+
+img{
+    width: 100%;
+}
+
+.imagen-fondo{
+    position: right top;
+}
+.inicio{
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header div img{
+    width: 40%;
+}
+div .buscador{
+    display: flex;
+    height: 25px;
+    margin: auto;
+}
+.text-cuotas{
+    margin: auto;
+}
+.fa-search{
+    background-color: white;
+    font-size: 15px;
+}
+
+header ul li{
+    display: none;
+   
+
+}
+.burguer-menu{
+    background-color: #1259c3;
+    font-size: 20px;
+    font-weight: 50px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+div.burger-menu i{
+    background-color:#1259c3;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 40px;
+}
+.fa-bars{
+    background-color:#1259c3;
+}
+
+.banner{
+width: 100%;
+}
+
+/*main*/
+.submit-button button{
+    background-color: lightblue;
+}
+.submit-button button:hover{
+    background-color: #0022AA;
+}
